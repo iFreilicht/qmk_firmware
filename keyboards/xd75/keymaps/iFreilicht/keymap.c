@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   { US_ESC,  US_1,    US_2,    US_3,    US_4,    US_5,    US_F22,  KC_MAIL, KC_CALC, US_6,    US_7,    US_8,    US_9,    US_0,    US_DEL  },
   { US_TAB,  US_Q,    US_W,    US_E,    US_R,    US_T,    KC_MPRV, KC_MPLY, KC_MNXT, US_Y,    US_U,    US_I,    US_O,    US_P,    US_BSPC },
   { CTL_ESC, US_A,    US_S,    US_D,    US_F,    US_G,    KC_VOLD, KC_MUTE, KC_VOLU, US_H,    US_J,    US_K,    US_L,    US_SCLN, US_ENT  },
-  { US_LSFT, US_Z,    US_X,    US_C,    US_V,    US_B,    KC_WWWB, KC_UP,   KC_WWWN, US_N,    US_M,    US_COMM, US_DOT,  US_SLSH, US_RSFT },
+  { US_LSFT, US_Z,    US_X,    US_C,    US_V,    US_B,    US_F18,  KC_UP,   US_F19,  US_N,    US_M,    US_COMM, US_DOT,  US_SLSH, US_RSFT },
   { US_LCTL, US_SPC,  MO(_FN), US_LGUI, US_LALT, SPC_SFT, US_LEFT, US_DOWN, US_RGHT, MO(_QA), MO(_FN), US_ALGR, US_SPC,  MO(_GM), MO(_NM) },
  },
 
