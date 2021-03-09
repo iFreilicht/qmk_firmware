@@ -25,21 +25,9 @@
 #define _NM 5  // NumMode Layer
 #define _FN 6  // FN Layer
 
-#undef RGBLIGHT_HUE_STEP
-#undef RGBLIGHT_SAT_STEP
-#undef RGBLIGHT_VAL_STEP
-#define RGBLIGHT_HUE_STEP 15
-#define RGBLIGHT_SAT_STEP 25
-#define RGBLIGHT_VAL_STEP 10
-
 // US-Intl keycodes
 // AltGr
-#define ALGR(kc) RALT(kc)
 #define US_ALGR KC_RALT
-
-// Shortened keycodes
-#define KC_WWWB KC_WWW_BACK
-#define KC_WWWN KC_WWW_FORWARD
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
