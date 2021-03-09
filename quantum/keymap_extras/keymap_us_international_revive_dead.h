@@ -104,9 +104,6 @@ bool process_record_revive_dead_keys(uint16_t keycode, keyrecord_t *record) {
     return false;
 }
 
-// Modifiers
-#define SAGR(kc) (LSFT(ALGR(kc)))
-
 // Keycode macros for AltGr symbols of the US International Layout
 #define US_POWER_OF_1 SAGR(KC_1)  // ¹
 #define US_POW1 US_POWER_OF_1
