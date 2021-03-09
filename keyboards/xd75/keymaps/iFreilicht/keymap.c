@@ -46,8 +46,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  },
 
  [_QA] = { /* Alternate Graphs + Function*/
-  { US_GRV,  US_IEXL, US_POW2, US_POW3, US_CURR, US_EURO, _______, _______, _______, US_1OV4, US_1OV4, US_3OV4, US_MINS, US_EQL,  _______ },
-  { _______, _______, _______, US_LABK, _______, US_MINS, _______, _______, _______, US_EQL,  US_U_UM, US_RABK, US_O_UM, US_MINS, US_EQL  },
+  { _______, US_IEXL, US_POW2, US_POW3, US_CURR, US_EURO, _______, _______, _______, US_1OV4, US_1OV4, US_3OV4, US_MINS, US_EQL,  _______ },
+  { _______, _______, _______, US_LABK, _______, US_MINS, _______, _______, _______, US_EQL,  US_U_UM, US_RABK, US_O_UM, US_MINS, _______ },
   { _______, US_A_UM, US_SS,   US_LBRC, US_LCBR, US_LPRN, _______, _______, _______, US_RPRN, US_RCBR, US_RBRC, US_QUOT, US_PCRW, _______ },
   { _______, _______, _______, _______, _______, _______, _______, US_PGUP, _______, _______, US_MU,   US_GRV,  US_TILD, US_BSLS, _______ },
   { _______, _______, _______, _______, _______, _______, US_HOME, US_PGDN, US_END,  _______, _______, _______, _______, _______, _______ },
