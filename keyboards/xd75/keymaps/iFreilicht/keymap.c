@@ -25,22 +25,22 @@
 
 // US-Intl keycodes
 // AltGr
-#define US_ALGR KC_RALT
+#define KC_ALGR KC_RALT
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Visual guide to the layers can be found at http://www.keyboard-layout-editor.com/#/gists/f0196aab501bc234ef708e5527d6ad31 */
 
-#define SPC_SFT SFT_T(US_SPC)
-#define CTL_ESC CTL_T(US_ESC)
+#define SPC_SFT SFT_T(KC_SPC)
+#define CTL_ESC CTL_T(KC_ESC)
 
  [_QB] = { /* QWERTY */
-  { US_ESC,  US_1,    US_2,    US_3,    US_4,    US_5,    US_F22,  KC_MAIL, KC_CALC, US_6,    US_7,    US_8,    US_9,    US_0,    US_DEL  },
-  { US_TAB,  US_Q,    US_W,    US_E,    US_R,    US_T,    KC_MPRV, KC_MPLY, KC_MNXT, US_Y,    US_U,    US_I,    US_O,    US_P,    US_BSPC },
-  { CTL_ESC, US_A,    US_S,    US_D,    US_F,    US_G,    KC_VOLD, KC_MUTE, KC_VOLU, US_H,    US_J,    US_K,    US_L,    US_SCLN, US_ENT  },
-  { US_LSFT, US_Z,    US_X,    US_C,    US_V,    US_B,    US_F18,  KC_UP,   US_F19,  US_N,    US_M,    US_COMM, US_DOT,  US_SLSH, US_RSFT },
-  { US_LCTL, US_SPC,  MO(_FN), US_LGUI, US_LALT, SPC_SFT, US_LEFT, US_DOWN, US_RGHT, MO(_QA), MO(_FN), US_ALGR, US_SPC,  MO(_GM), MO(_NM) },
+  { KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_F22,  KC_MAIL, KC_CALC, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_DEL  },
+  { KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_MPRV, KC_MPLY, KC_MNXT, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC },
+  { CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_VOLD, KC_MUTE, KC_VOLU, KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_ENT  },
+  { KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_F18,  KC_UP,   KC_F19,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT },
+  { KC_LCTL, KC_SPC,  MO(_FN), KC_LGUI, KC_LALT, SPC_SFT, KC_LEFT, KC_DOWN, KC_RGHT, MO(_QA), MO(_FN), KC_ALGR, KC_SPC,  MO(_GM), MO(_NM) },
  },
 
  [_QA] = { /* Alternate Graphs + Function*/
@@ -52,23 +52,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  },
 
  [_GM] = { /* GameMode */
-  { _______, US_1,    US_2,    US_3,    US_4,    US_5,    US_6,    US_7,    US_8,    US_9,    US_0,    US_MINS, US_EQL,  US_DGRV, _______ },
+  { _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_GRV, _______ },
   { _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ },
-  { US_LCTL, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ },
-  { _______, _______, _______, _______, _______, _______, US_F23 , _______, US_F24,  _______, _______, _______, _______, _______, _______ },
-  { _______, _______, _______, _______, _______, US_SPC , _______, _______, _______, _______, _______, _______, _______, _______, _______ },
+  { KC_LCTL, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ },
+  { _______, _______, _______, _______, _______, _______, KC_F23 , _______, KC_F24,  _______, _______, _______, _______, _______, _______ },
+  { _______, _______, _______, _______, _______, KC_SPC , _______, _______, _______, _______, _______, _______, _______, _______, _______ },
  },
 
  [_NM] = { /* NumMode */
-  { _______, _______, _______, _______, _______, _______, US_P7,   US_P8,   US_P9,   US_PSLS, _______, _______, _______, _______, _______ },
-  { _______, _______, _______, _______, _______, _______, US_P4,   US_P5,   US_P6,   US_PAST, _______, _______, _______, _______, _______ },
-  { _______, _______, _______, _______, _______, _______, US_P1,   US_P2,   US_P3,   US_PMNS, _______, _______, _______, _______, US_PENT },
-  { _______, _______, _______, _______, _______, _______, US_P0,   _______, US_PDOT, US_PPLS, _______, _______, _______, _______, _______ },
-  { _______, _______, _______, _______, _______, _______, _______, _______, _______, US_PENT, _______, _______, _______, _______, _______ },
+  { _______, _______, _______, _______, _______, _______, KC_P7,   KC_P8,   KC_P9,   KC_PSLS, _______, _______, _______, _______, _______ },
+  { _______, _______, _______, _______, _______, _______, KC_P4,   KC_P5,   KC_P6,   KC_PAST, _______, _______, _______, _______, _______ },
+  { _______, _______, _______, _______, _______, _______, KC_P1,   KC_P2,   KC_P3,   KC_PMNS, _______, _______, _______, _______, KC_PENT },
+  { _______, _______, _______, _______, _______, _______, KC_P0,   _______, KC_PDOT, KC_PPLS, _______, _______, _______, _______, _______ },
+  { _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_PENT, _______, _______, _______, _______, _______ },
  },
 
  [_FN] = { /* Function */
-  { US_DGRV, _______, _______, _______, _______, DEBUG  , KC_SLCK, KC_PAUS, RESET,   US_DCRC, _______, US_DQOT, _______, KC_PSCR, KC_INS  },
+  { _______, _______, _______, _______, _______, DEBUG,   KC_SLCK, KC_PAUS, RESET,   _______, _______, _______, _______, KC_PSCR, KC_INS  },
   { _______, _______, _______, _______, _______, _______, RGB_HUD, _______, RGB_HUI, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   _______ },
   { _______, _______, _______, _______, _______, _______, RGB_VAD, RGB_TOG, RGB_VAI, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______ },
   { _______, _______, _______, _______, _______, _______, RGB_SAD, _______, RGB_SAI, KC_F11,  KC_F12,  KC_F13,  KC_F14,  KC_F15,  _______ },
@@ -82,15 +82,4 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   { _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ },
   { _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ },
  }*/
-};
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  // Revive dead keys
-  if(!process_record_revive_dead_keys(keycode, record)) return false;
-
-  return true;
-}
-
-const uint16_t PROGMEM fn_actions[] = {
-
 };
