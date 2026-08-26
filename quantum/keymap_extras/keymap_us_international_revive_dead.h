@@ -17,7 +17,7 @@
 #ifndef KEMAP_US_INTERNATIONAL_H
 #define KEMAP_US_INTERNATIONAL_H
 
-#include "keymap.h"
+#include "quantum.h"
 
 // =====================================================================
 // = This keymap extra provides aliases for all symbols that can be    =

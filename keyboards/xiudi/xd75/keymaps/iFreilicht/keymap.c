@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "xd75.h"
+#include QMK_KEYBOARD_H
 #include "keymap_us_international_revive_dead.h"
 
 // Layer shorthand
@@ -26,6 +26,9 @@
 // US-Intl keycodes
 // AltGr
 #define KC_ALGR KC_RALT
+
+// Alias for Debug for alignment
+#define KC_DBUG QK_DEBUG_TOGGLE
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -68,10 +71,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  },
 
  [_FN] = { /* Function */
-  { _______, _______, _______, _______, _______, DEBUG,   KC_SLCK, KC_PAUS, RESET,   _______, _______, _______, _______, KC_PSCR, KC_INS  },
-  { _______, _______, _______, _______, _______, _______, RGB_HUD, _______, RGB_HUI, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   _______ },
-  { _______, _______, _______, _______, _______, _______, RGB_VAD, RGB_TOG, RGB_VAI, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______ },
-  { _______, _______, _______, _______, _______, _______, RGB_SAD, _______, RGB_SAI, KC_F11,  KC_F12,  KC_F13,  KC_F14,  KC_F15,  _______ },
+  { _______, _______, _______, _______, _______, KC_DBUG, KC_SCRL, KC_PAUS, QK_BOOT, _______, _______, _______, _______, KC_PSCR, KC_INS  },
+  { _______, _______, _______, _______, _______, _______, UG_HUED, _______, UG_HUEU, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   _______ },
+  { _______, _______, _______, _______, _______, _______, UG_VALD, UG_TOGG, UG_VALU, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______ },
+  { _______, _______, _______, _______, _______, _______, UG_SATD, _______, UG_SATU, KC_F11,  KC_F12,  KC_F13,  KC_F14,  KC_F15,  _______ },
   { _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ },
  },
 
