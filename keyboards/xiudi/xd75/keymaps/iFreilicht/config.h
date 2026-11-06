@@ -15,3 +15,20 @@
  */
 
 #pragma once
+
+// Only allow a steady underglow colour. This also overrides any animation still
+// saved in EEPROM, as out-of-range modes get clamped to RGBLIGHT_MODE_STATIC_LIGHT.
+#undef RGBLIGHT_EFFECT_BREATHING
+#undef RGBLIGHT_EFFECT_RAINBOW_MOOD
+#undef RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#undef RGBLIGHT_EFFECT_SNAKE
+#undef RGBLIGHT_EFFECT_KNIGHT
+#undef RGBLIGHT_EFFECT_CHRISTMAS
+#undef RGBLIGHT_EFFECT_STATIC_GRADIENT
+#undef RGBLIGHT_EFFECT_RGB_TEST
+#undef RGBLIGHT_EFFECT_ALTERNATING
+#undef RGBLIGHT_EFFECT_TWINKLE
+
+// Finer hue adjustment for UG_HUEU/UG_HUED, out of 256 hues in total.
+#undef RGBLIGHT_HUE_STEP
+#define RGBLIGHT_HUE_STEP 1
